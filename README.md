@@ -1,6 +1,7 @@
-# Use Streamlit to create a personal website
+# Simple personal website using Streamlit
 
 Create a personal website using Python and the Streamlit library. This website will be able to serve as a place for you to share your thoughts, projects, and anything else you want.
+Project forked from Sven-Bo/personal-website-streamlit
 
 ## Video Tutorial
 [![YouTube Video](https://img.youtube.com/vi/VqgUkExPvLY/0.jpg)](https://youtu.be/VqgUkExPvLY)

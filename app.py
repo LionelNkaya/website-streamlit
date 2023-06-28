@@ -24,18 +24,17 @@ def local_css(file_name):
 local_css("style/style.css")
 
 # ---- LOAD ASSETS ----
-lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
-img_contact_form = Image.open("images/yt_contact_form.png")
-img_lottie_animation = Image.open("images/yt_lottie_animation.png")
+lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_DbCYKfCXBZ.json")
+img_sharehub = Image.open("images/shareHub.png")
+img_rqm = Image.open("images/rqm.png")
 
 # ---- HEADER SECTION ----
 with st.container():
-    st.subheader("Hi, I am Sven :wave:")
-    st.title("A Data Analyst From Germany")
+    st.subheader("Hi, I am Lionel :wave:")
+    st.title("A Software Solution Builder")
     st.write(
-        "I am passionate about finding ways to use Python and VBA to be more efficient and effective in business settings."
+        "My goal is to build applications that allow information to be shared and great ideas to scale."
     )
-    st.write("[Learn More >](https://pythonandvba.com)")
 
 # ---- WHAT I DO ----
 with st.container():
@@ -46,16 +45,16 @@ with st.container():
         st.write("##")
         st.write(
             """
-            On my YouTube channel I am creating tutorials for people who:
-            - are looking for a way to leverage the power of Python in their day-to-day work.
-            - are struggling with repetitive tasks in Excel and are looking for a way to use Python and VBA.
-            - want to learn Data Analysis & Data Science to perform meaningful and impactful analyses.
-            - are working with Excel and found themselves thinking - "there has to be a better way."
+            - I build automation tools that allow high producers in comapnies to produce even more.
+            - I analyse data.
+            - I build education ressources and train users on new tools.
+            - I write documentation for other developers.
+            - I use low code tools, to build data over forms apps.
+            - I build for the web with HTML, CSS, JS and SQL, Python & PHP on the back end.
 
-            If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
             """
         )
-        st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
+
     with right_column:
         st_lottie(lottie_coding, height=300, key="coding")
 
@@ -66,30 +65,29 @@ with st.container():
     st.write("##")
     image_column, text_column = st.columns((1, 2))
     with image_column:
-        st.image(img_lottie_animation)
+        st.image(img_sharehub)
     with text_column:
-        st.subheader("Integrate Lottie Animations Inside Your Streamlit App")
+        st.subheader("[shareHub](https://sharehub.lionelnkaya.com)")
         st.write(
             """
-            Learn how to use Lottie Files in Streamlit!
-            Animations make our web app more engaging and fun, and Lottie Files are the easiest way to do it!
-            In this tutorial, I'll show you exactly how to do it
+            When you share with shareHub, we use the Facebook and Twitter API so that you can share your ideas with the world without loosing innumerable hours logged in  to your social media accounts scrolling through content.
             """
         )
-        st.markdown("[Watch Video...](https://youtu.be/TXSOitGoINE)")
+        st.markdown("[Code Repo](https://github.com/LionelNkaya/shareHub)")
+
 with st.container():
     image_column, text_column = st.columns((1, 2))
     with image_column:
-        st.image(img_contact_form)
+        st.image(img_rqm)
     with text_column:
-        st.subheader("How To Add A Contact Form To Your Streamlit App")
+        st.subheader("[Random Quote Machine](https://randomquotemachine.lionelnkaya.com)")
         st.write(
             """
-            Want to add a contact form to your Streamlit website?
-            In this video, I'm going to show you how to implement a contact form in your Streamlit app using the free service ‘Form Submit’.
+            Press the button and receive encouragement in the LORD. Possibility to post the Bible quote to your Tweeter account.
             """
         )
-        st.markdown("[Watch Video...](https://youtu.be/FOULV9Xij_8)")
+        st.markdown("[Code Repo](https://github.com/LionelNkaya/RandomQuoteMachine)")
+
 
 # ---- CONTACT ----
 with st.container():
@@ -97,9 +95,9 @@ with st.container():
     st.header("Get In Touch With Me!")
     st.write("##")
 
-    # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
+    # Documention: https://formsubmit.co/ !!! PUT YOUR OWN EMAIL ADDRESS !!!
     contact_form = """
-    <form action="https://formsubmit.co/YOUR@MAIL.COM" method="POST">
+    <form action="https://formsubmit.co/c478058a3427fc24b2d171982039ca60" method="POST">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Your email" required>
