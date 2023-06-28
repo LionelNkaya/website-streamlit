@@ -6,7 +6,7 @@ import altair as alt
 
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
-st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="Portfolio", page_icon=":tada:", layout="wide")
 
 
 def load_lottieurl(url):
@@ -26,7 +26,7 @@ local_css("style/style.css")
 
 # ---- LOAD ASSETS ----
 lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_DbCYKfCXBZ.json")
-img_sharehub = Image.open("images/shareHub.png")
+img_sharehub = Image.open("images/sharehub2.png")
 img_rqm = Image.open("images/rqm.png")
 
 # ---- HEADER SECTION ----
