@@ -26,12 +26,13 @@ local_css("style/style.css")
 
 # ---- LOAD ASSETS ----
 lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_DbCYKfCXBZ.json")
-img_sharehub = Image.open("images/sharehub2.png")
+img_pray = Image.open('images/pray.png')
+img_sharehub = Image.open("images/sharehub.png")
 img_rqm = Image.open("images/rqm.png")
 
 # ---- HEADER SECTION ----
 with st.container():
-    st.subheader("Hi, I am Lionel :wave:")
+    st.subheader("Hi, I am Lionel \U0001F44B🏿")
     st.title("A Software Solution Builder")
     st.write(
         "My goal is to build applications that allow information to be shared and great ideas to scale."
@@ -46,12 +47,12 @@ with st.container():
         st.write("##")
         st.write(
             """
-            - I build automation tools that allow high producers in comapnies to produce even more.
+            - I build applications for the web with HTML, CSS, JS and SQL, Python & PHP on the back end.
             - I analyse data.
+            - I build automation tools that allow high producers in comapnies to produce even more. 
             - I build education ressources and train users on new tools.
             - I write documentation for other developers.
             - I use low code tools, to build data over forms apps.
-            - I build for the web with HTML, CSS, JS and SQL, Python & PHP on the back end.
 
             """
         )
@@ -66,9 +67,23 @@ with st.container():
     st.write("##")
     image_column, text_column = st.columns((1, 2))
     with image_column:
+        st.image(img_pray)
+    with text_column:
+        st.subheader("[Pray](https://prayapp.us)")
+        st.write(
+            """
+            The world would be a better place if more people could journal daily. Pray is a journaling app that remind users of their previous entry.
+            All the data stored on Pray's database is encrypted.
+            """
+        )
+        st.markdown("[Code Repo](https://github.com/LionelNkaya/pray)")
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
         st.image(img_sharehub)
     with text_column:
-        st.subheader("[shareHub](https://sharehub.lionelnkaya.com)")
+        st.subheader("[shareHub](https://randomquotemachine.lionelnkaya.com)")
         st.write(
             """
             When you share with shareHub, we use the Facebook and Twitter API so that you can share your ideas with the world without loosing innumerable hours logged in  to your social media accounts scrolling through content.
@@ -87,7 +102,7 @@ with st.container():
             Press the button and receive encouragement in the LORD. Possibility to post the Bible quote to your Tweeter account.
             """
         )
-        st.markdown("[Code Repo](https://github.com/LionelNkaya/RandomQuoteMachine)")
+        st.markdown("[Code Repo](https://github.com/LionelNkaya/RandomQuoteMachine)")        
 
 
 # ---- CONTACT ----
