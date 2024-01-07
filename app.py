@@ -47,12 +47,12 @@ with st.container():
         st.write("##")
         st.write(
             """
-            - I build applications for the web with HTML, CSS, JS and SQL, Python & PHP on the back end.
+            - I build full stack applications for the web.
             - I analyse data.
             - I build automation tools that allow high producers in comapnies to produce even more. 
             - I build education ressources and train users on new tools.
             - I write documentation for other developers.
-            - I use low code tools, to build data over forms apps.
+            - I build data over forms apps.
 
             """
         )
